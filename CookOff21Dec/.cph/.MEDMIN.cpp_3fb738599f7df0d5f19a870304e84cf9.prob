@@ -1,0 +1,1 @@
+{"name":"Local: MEDMIN","url":"c:\\Users\\Hp\\Desktop\\College\\Coding\\CF\\CookOff21Dec\\MEDMIN.cpp","tests":[{"id":1639999644780,"input":"3\n5\n2 7 4 8 2\n3\n1 2 3\n5\n1 1 1 1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Hp\\Desktop\\College\\Coding\\CF\\CookOff21Dec\\MEDMIN.cpp","group":"local","local":true}

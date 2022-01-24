@@ -1,0 +1,1 @@
+{"name":"Local: ShoppingList","url":"c:\\Users\\srija\\Desktop\\CF\\ShoppingList.cpp","tests":[{"id":1620122873622,"input":"3\nsoap\nrice\napple\n3\napple\nsoap\nmango","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\srija\\Desktop\\CF\\ShoppingList.cpp","group":"local","local":true}
