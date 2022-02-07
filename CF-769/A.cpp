@@ -12,17 +12,19 @@ int main(){
     int t; cin>>t;
     while(t--){
 
-        int a, b, p, q;
-        cin>>a>>b>>p>>q;
+        int n;
+        cin>>n;
+        string s;
+        cin>>s;
 
-        int l = (a+b)%2;
-        int t = (p+q)%2;
+        int c1 = 0, c0 = 0;
+        for(int i=0;i<n;i++){
+            if(s[i]=='0')c0++;
+            else c1++;
+        }
 
-        if(a==p && b==q)cout<<"0";
-        else if(l==t)cout<<"2";
-        else cout<<"1";
-
-        cout<<"\n";
+        if(c1<=1 && c0<=1)cout<<"YES\n";
+        else cout<<"NO\n";
     }
  
     return 0;
