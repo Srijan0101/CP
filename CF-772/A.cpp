@@ -14,20 +14,14 @@ int main(){
 
         ll n;
         cin>>n;
-
+        
         vll a(n);
-        vll b(n);
-
         for(ll i=0;i<n;i++)cin>>a[i];
-        for(ll i=0;i<n;i++)cin>>b[i];
 
-        map<pair<ll, ll>, ll> mp;
         ll res = 0;
-
-        for(ll i=0; i<n;i++){
-
-            res += mp[make_pair(a[i], b[i])];
-            mp[make_pair(b[i], a[i])]++;
+        for(ll i=0;i<n-1;i+=2){
+            
+            res += (a[i]|a[i+1]); 
         }
         cout<<res<<"\n";
     }

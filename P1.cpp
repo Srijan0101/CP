@@ -2,40 +2,42 @@
 #define ll long long 
 #define vi vector<int> 
 #define vll vector<long long> 
-#define f(i,n) for(int i = 0; i < n; i++){cin>>a[i];}
 using namespace std;
  
 int main(){
  
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
 
-    int t; cin>>t;
-    while(t--){
+	int t; cin>>t;
+	while(t--){
 
-        ll n;
-        cin>>n;
+		ll n;
+		cin>>n;
 
-        vll a(n);
-        f(i,n);
+		vll a(n);
+		vll b(n);
 
-        vll bit(32, 0);
+		for(ll i = 0; i < n; i++) cin>>a[i];
+		for(ll i = 0; i < n; i++) cin>>b[i];
 
-        for(int i = 0; i < n; i++){
-            ll curr = a[i];
-            for(int j=0; j<=31; j++){
+		map<ll, ll> m;
+		map<ll, ll> m1;
 
-                if(curr&(1<<j))      // 1<<j == 1*(2^j)
-                    bit[j]++;
-            }
-        }
-        ll ans=0;
-        for(int p=31; p>=0; p--){
-            if(bit[p]>=2)
-                ans += (1<<p);        // ans+= 1*(2^p)
-        }
-        cout<<ans<<"\n";
-    }
+		ll p = 0, p1 = 0;
+		for(ll i = 0; i < n; i++){
+
+			m1[a[i]]++;
+		}
+		for(ll i = n-1; i >= 0; i--){
+
+			p+=min(m[a[i]], m1[a[i]]);
+			m1[a[i]]--;
+			m[b[i]]++;
+
+		}
+		cout<<p<<"\n";
+	}
  
-    return 0;
+	return 0;
 }

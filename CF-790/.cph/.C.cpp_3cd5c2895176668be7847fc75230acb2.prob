@@ -1,0 +1,1 @@
+{"name":"Local: C","url":"c:\\Users\\Hp\\Desktop\\College\\Coding\\CF\\CF-786\\C.cpp","tests":[{"id":1651505317115,"input":"3\naaaa\na\naa\nabc\na\nb\n","output":""},{"id":1651505377177,"input":"1\naaa\nt","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Hp\\Desktop\\College\\Coding\\CF\\CF-786\\C.cpp","group":"local","local":true}
